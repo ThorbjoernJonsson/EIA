@@ -32,7 +32,7 @@ def plot_time_series(df):
 
 
 def main():
-    api_key = "6569647505cfb6f73e1aa9363045abc3"
+    api_key = "YOUR_API_KEY_HERE"
     api = eia.API(api_key)
     series_ID='http://api.eia.gov/series/?api_key=6569647505cfb6f73e1aa9363045abc3&series_id=PET.WCESTUS1.W'
     df = retrieve_time_series(api, series_ID)
