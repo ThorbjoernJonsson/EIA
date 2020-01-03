@@ -30,7 +30,6 @@ def plot_time_series(df):
     fig.show()
     return 1
 
-
 def main():
     api_key = "YOUR_API_KEY_HERE"
     api = eia.API(api_key)
