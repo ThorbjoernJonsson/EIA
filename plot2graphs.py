@@ -54,12 +54,12 @@ def plot_time_series(df1, df2):
     return 1
 
 def main():
-    api_key = "6569647505cfb6f73e1aa9363045abc3"
+    api_key = "YOUR_API_KEY_HERE"
     api = eia.API(api_key)
     #Total US inventories
-    #series_ID1='http://api.eia.gov/series/?api_key=6569647505cfb6f73e1aa9363045abc3&series_id=PET.WCESTUS1.W'
-    series_ID1 = 'http://api.eia.gov/series/?6569647505cfb6f73e1aa9363045abc3&series_id=PET.W_EPC0_SAX_YCUOK_MBBL.W'
-    series_ID2 = 'http://api.eia.gov/series/?api_key=6569647505cfb6f73e1aa9363045abc3&series_id=PET.RWTC.D'
+    #series_ID1='http://api.eia.gov/series/?api_key=YOUR_API_KEY_HER&series_id=PET.WCESTUS1.W'
+    series_ID1 = 'http://api.eia.gov/series/?YOUR_API_KEY_HER&series_id=PET.W_EPC0_SAX_YCUOK_MBBL.W'
+    series_ID2 = 'http://api.eia.gov/series/?api_key=YOUR_API_KEY_HER&series_id=PET.RWTC.D'
     df1 = retrieve_time_series(api, series_ID1)
     df2 = retrieve_time_series(api, series_ID2)
     plot_time_series(df1, df2)
